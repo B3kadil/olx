@@ -1,38 +1,213 @@
-.App {
-  text-align: center;
+* {
+    font-family: Geomanist, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background-color: rgba(199, 229, 241, 0.308);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+    display: flex;
+    background-color: #23e5db;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header-item {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+.header-item .fa-regular {
+    padding-right: 10px;
+    color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-item .language {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.header-item .kz {
+    padding-right: 10px;
+}
+
+.header-item a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Geomanist, Arial, sans-serif;
+}
+
+.header-item:hover a:hover {
+    color: rgba(255, 255, 255, 0.744);
+}
+
+.header-item .kz:hover {
+    text-decoration: underline;
+}
+
+.header-item .ru {
+    border-left: 1px solid rgba(255, 255, 255, 0.7);
+    padding-left: 10px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.header-logo .logo {
+    width: 80px;
+    height: 80px;
+    margin-left: 100px;
+}
+
+.header-item .header-button {
+    border: solid 5px #FFFFFF;
+    border-radius: 4px;
+    color: #002F34;
+    padding: 10px 43px 8px 43px;
+    background-color: #fff;
+}
+
+.header-item .header-button:hover {
+    background-color: #002F34;
+    color: #fff;
+}
+
+.row {
+    margin-right: 100px;
+    display: flex;
+    justify-content: end;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    height: 40vh;
+    border-top: 2px solid #002F34;
+    padding-left: 100px;
+    margin-top: 100px;
+    padding-top: 100px;
+}
+
+.footer-items .names {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 40vh;
+}
+
+.footer-items .names a {
+    text-decoration: none;
+    line-height: 1.88;
+    font-weight: 600;
+    color: #002F34;
+    margin: 0 16px 0 0;
+}
+
+.footer-items .names a:hover {
+    color: rgb(255, 255, 255);
+    background-color: #002F34;
+}
+
+.blocks {
+    display: flex;
+    justify-content: start;
+}
+
+main {
+    margin: 70px 100px;
+}
+
+nav {
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+    border-bottom: 2px solid #002F34;
+}
+
+main nav a {
+    text-decoration: none;
+    padding: 20px;
+    color: #002F34;
+}
+
+main nav a:hover {
+    background-color: #002F34;
+    color: #fff;
+}
+
+.container {
+    margin: 10px 0;
+    color: #002F34;
+}
+
+.all-col {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 5px;
+    border: 10px;
+}
+
+.all-col .col-img img {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+.all-col .col-text {
+    width: 100%;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-text-info {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.col-text-info h3 {
+    font-size: 20px;
+    color: #002F34;
+    margin-top: 6px;
+    font-weight: 400;
+}
+
+.col-text-info h3:hover {
+    background-color: #002F34;
+    color: #fff;
+}
+
+.col-text-info p {
+    background: #F2F4F5;
+    color: #002F34;
+    margin: 4px 0 6px 0;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.col-text-info span {
+    font-weight: 500;
+    font-size: 12px;
+    color: #406367;
+}
+
+.col-text-price {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #002F34;
+    padding: 0 10px;
 }
